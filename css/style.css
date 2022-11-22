@@ -1,0 +1,425 @@
+*{
+    margin: 0 ;
+    font-family: "TT Lakes-Regular",sans-serif;
+    font-family: TT Lakes;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    box-sizing: border-box;
+ }
+@font-face {
+    font-family:'TT Lakes';
+    src: url(assets/fonts/TTLakes-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-size: 14px;
+}
+body{
+    background-color: #F8F8F8;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color:#7E7E82;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    min-height: 24px;
+}
+.header{
+    width: 100%;
+    min-height: 88px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background-color:#FFFFFF ;
+}
+
+button{
+    background-color:transparent;
+    border:0;
+    font-family:inherit ;
+    padding: 0;
+    box-sizing: content-box;
+    min-width: 40px;
+    max-height: 40px;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+.container__burger{
+    max-width: 40px;
+    max-height: 40px;
+    background-color: transparent;
+    border:0;
+    padding: 0;
+    margin: 0;
+}
+.container__logo--link{
+    max-width: 96px;
+    min-height: 50px;
+    margin: 0px 16px;
+    position: relative;
+}
+
+.list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+li{
+   list-style-type: none; 
+   max-width: 40px;
+   max-height: 40px;
+   display: inline;
+   margin: 0 8px;
+   box-sizing: content-box;
+}
+.container__logo--link::after{
+    content: "";
+    min-width: 2px;
+    min-height: 32px;
+    background-color:#EAEAEA;
+    margin: 4px 0;
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    display: none;
+    border-radius: 1px;
+}
+.list__btn:nth-child(4){
+    position: relative;
+}
+.list__btn:nth-child(4)::after{
+    content: "";
+    min-width: 2px;
+    min-height: 32px;
+    background-color:#EAEAEA;
+    margin: 4px 0;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    border-radius: 1px;
+}
+.shadow{
+    background-color:#D9FFF5;
+    min-height: 1px;
+    width: 100%;
+    margin: 0;
+}
+
+.list__btn:first-child, .list__btn:nth-child(2), .list__btn:nth-child(3){
+    display: none;
+}
+.title{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.6000000238418579px;
+    text-align: left;
+    margin:24px 16px;
+    margin-bottom: 14px;
+    position: relative;
+    display: block;
+}
+.title__request{
+margin-right: 32px;
+margin-left: 452px;
+}
+.btn-title__image{
+margin-left: 8px;
+}
+.title__checkstatus{
+    display: none;
+}
+.title__request{
+    display: none;
+}
+.title::after{
+    content: "";
+    min-width: 4px;
+    min-height: 40px;
+    background-color: #41F6D7;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px;
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: -15px;
+}
+.nav{
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    display: inline-block;
+    min-height: 42px;
+    padding:10px 0 0 0;
+    margin: 0px 0 0 15px ;
+    position: relative;
+}
+body::after{
+    content: "";
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    min-width: 24px;
+    height: 40px;
+    top: 180px;
+    right: 0px;
+    display: block;
+    position: absolute;
+}
+.nav__link{
+    box-sizing: content-box;
+    margin: 0px;
+    padding: 8px 9px 8px 16px;
+}
+.nav__link:active{
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+}
+.main{
+    position: relative;
+}
+.container-main{
+    width: 288px;
+    height: 90px;
+    margin:24px 16px 56px 16px;
+    overflow: hidden;
+}
+.container-main__text{
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+color: #1B1C21;
+}
+.main__btn{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 205px;
+    left: 20px;
+}
+.expand{
+    max-width: 24px;
+    max-height: 24px;
+    margin-right: 6px;
+}
+.main__image{
+    width: 320px;
+    height: 176px;
+    margin-bottom: 35px;
+    margin: 0 auto;
+}
+@media screen and (min-width:375px) {
+    .list__btn:nth-child(4)::after{
+        content: "";
+        min-width: 2px;
+        min-height: 32px;
+        background-color:#EAEAEA;
+        margin: 4px 0;
+        position: absolute;
+        top: 0;
+        left: -35px;
+    }
+}
+@media screen and (min-width:425px) {
+    .list__btn:nth-child(4)::after{
+        content: "";
+        min-width: 2px;
+        min-height: 32px;
+        background-color:#EAEAEA;
+        margin: 4px 0;
+        position: absolute;
+        top: 0;
+        left: -45px;
+    }
+}
+@media  screen and (min-width:768px) {
+    .header{
+        justify-content: space-between;
+    }
+    .list__btn:first-child, .list__btn:nth-child(2), .list__btn:nth-child(3){
+        display:inline;
+    }
+    .list{
+        justify-content: flex-end;
+    }
+    .container__logo--link::after{
+        display: block;
+        top: 10px;
+        left:-15px;
+    }
+    .list__btn:nth-child(4)::after{
+        display: block;
+    }
+    .list__btn:nth-child(4){
+        margin-left: 20px;
+    }
+    .list__btn:nth-child(3){
+        margin-right: 20px;
+    }
+    .list__btn:nth-child(4)::after{
+        content: "";
+        min-width: 2px;
+        min-height: 32px;
+        background-color:#EAEAEA;
+        margin: 4px 0;
+        position: absolute;
+        top: 0;
+        left: -20px;
+    }
+    .container__burger{
+        margin-left:15px ;
+    }
+    .container__logo--link{
+        margin-left: 30px;
+    }
+    .main{
+        display: flex;
+        flex-direction: row;
+        margin-top: 32px;
+    }
+    .main__btn{
+        bottom:50px;
+        left: 30px;
+    }
+    .container-main__text:first-child{
+        height: 120px;
+    }
+    .container-main{
+        width: 312px;
+        height: 160px;
+        margin:0px 48px 88px 24px;
+    }
+    .main__image{
+        width: 360px;
+        height: 208px;
+        margin-top: 0;
+        border-radius: 6px;
+    }
+    .container-main__text{
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+    }
+}
+@media screen and (min-width:1120px) {
+    .shadow{
+        display: none;
+    }
+    .header{
+        display:none;
+    }
+    .title{
+        margin: 0 32px;
+        margin-top: 48px;
+        margin-bottom: 17px;
+    }
+    .title::after{
+        min-width: 3px;
+        left: -32px;
+    }
+    .nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        overflow:visible;
+        margin-left: 40px;
+    }
+    li:not(li:last-child){
+        margin-right: 10px;
+    }
+     li{
+        min-width: 220px;
+    }
+    li:nth-child(2){
+        min-width: 190px;
+    }
+    li:nth-child(3){
+        min-width: 120px;
+    }
+    li:nth-child(4){
+        min-width: 210px;
+    }
+    li:nth-child(5){
+        min-width: 150px;
+    }
+    li:nth-child(6){
+        min-width: 70px;
+    }
+    .container-main{
+        width: 490px;
+    }
+    .container-main__text:first-child{
+        height: 90px;
+    }
+    .main__image{
+        width: 531px;
+        height: 307px;
+        margin-bottom: 49px;
+    }
+    .main{
+        margin-top: 19px;
+    }
+    .container-main{
+        overflow:visible;
+    }
+    .container-main__text{
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.20000000298023224px;
+text-align: left;
+overflow:visible;
+    }
+    .title{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .title__request{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-end;
+        font-family: TT Lakes;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: -0.20000000298023224px;
+text-align: right;
+
+    }
+    .title__checkstatus{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-end;
+        font-family: TT Lakes;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: -0.20000000298023224px;
+text-align: right;
+    }
+    .main__btn{
+        bottom: 150px;
+    }
+}
